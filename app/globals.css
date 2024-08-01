@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --primary-color1: #1F4049;
+  --primary-color2: #BF7D75;
+  --secondary-color1: #EFD9C3;
+  --secondary-color2: #83635E;
+  background-color: var(--secondary-color1);
+  color: var(--primary-color1);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.contact-p{
+  color: var(--secondary-color2);
+}
+
+
+
+
+@media (min-width: 768px) {
+  body {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--secondary-color1);
+}
+
+.navbar.desktop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar.mobile {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--primary-color1);
+  color: var(--secondary-color1);
+  border-radius: 50px;
+  margin: 0.5rem;
+}
+
+.nav-items {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-items li {
+  margin: 0 1rem;
+}
+
+.nav-items a {
+  text-decoration: none;
+}
+
+.heading {
+  font-family: "Calistoga", serif;
+  color: var(--primary-color1);
+}
+
+.projects{
+  color: var(--secondary-color2);
+}
+
+.grid-card{
+  color: var(--secondary-color1);
+}
+
+.grid-card-p{
+  color: white;
+}
+
+
+.subheading {
+  color: var(--secondary-color2);
+}
+
+.counter{
+  color: var(--secondary-color2);
+  font-family: "Calistoga", serif;
+}
+
+.counter-info{
+  color: var(--primary-color1);
+  font-size: 30px;
+}
+
+.google-btn,
+.serv-btn {
+  border-radius: 9999px;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.google-btn {
+  background-color: var(--primary-color1);
+  color: var(--secondary-color1);
+}
+
+.serv-btn {
+  background-color: var(--secondary-color1);
+  color: var(--primary-color1);
+  border: 1.5px solid var(--primary-color1);
+}
+
+.logo-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer{
+  color: var(--primary-color1);
+}
+
+@media (max-width: 768px) {
+
+  .footer{
+    margin-bottom: 35px;
+  }
+
+  .navbar.mobile {
+    justify-content: space-around;
+  }
+
+  .nav-items {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .nav-items li {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-items li svg {
+    margin-bottom: 5px;
+  }
+
+  .heading {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .subheading {
+    text-align: justify;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .btns {
+    justify-content: center;
+  }
+  
+  .contact-p {
+    text-align: center;
+    color: var(--secondary-color2);
+  }
+
+}
